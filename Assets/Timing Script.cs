@@ -19,10 +19,12 @@ public class TimingScript : MonoBehaviour
 
     [SerializeField] private Transform EndLeft;
     [SerializeField] private Transform EndRight;
+
+    private AudioSource clangAudio;
     // Start is called before the first frame update
     void Start()
     {
-        
+        clangAudio= GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -47,6 +49,7 @@ public class TimingScript : MonoBehaviour
         if (Input.anyKeyDown)
         {
             StartCoroutine(SlowMo());
+            clangAudio.Play();
             
             // Check Zones
             if (cursorPos >= greatLeft.position.x && cursorPos <= greatRight.position.x)
@@ -71,9 +74,10 @@ public class TimingScript : MonoBehaviour
     private IEnumerator SlowMo()
     {
         Debug.Log("SlowMo");
-        cursorMovementSpeed *= 0.3f;
-        yield return new WaitForSeconds(0.1f);
-        cursorMovementSpeed *= 1/0.3f;
+        float slowRate = 0.2f;
+        cursorMovementSpeed *= slowRate;
+        yield return new WaitForSeconds(0.3f);
+        cursorMovementSpeed *= 1/slowRate;
     }
 
 }
