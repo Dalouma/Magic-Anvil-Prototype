@@ -8,10 +8,6 @@ public class TimingScript : MonoBehaviour
 
     [SerializeField] private Transform cursorTransform;
 
-    [SerializeField] private Collider2D greenZone;
-    [SerializeField] private Collider2D yellowZone;
-    [SerializeField] private Collider2D orangeZone;
-
     [SerializeField] private Transform greatLeft;
     [SerializeField] private Transform greatRight;
 

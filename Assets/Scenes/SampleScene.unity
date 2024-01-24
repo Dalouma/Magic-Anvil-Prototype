@@ -463,7 +463,6 @@ GameObject:
   m_Component:
   - component: {fileID: 587550498}
   - component: {fileID: 587550500}
-  - component: {fileID: 587550499}
   m_Layer: 0
   m_Name: bar_sprite
   m_TagString: Player
@@ -486,31 +485,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1269127666}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &587550499
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 587550497}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4f3fe7dce921b94189619963e64b262, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cursorMovementSpeed: 5
-  cursorTransform: {fileID: 0}
-  greenZone: {fileID: 0}
-  yellowZone: {fileID: 0}
-  orangeZone: {fileID: 0}
-  greatLeft: {fileID: 0}
-  greatRight: {fileID: 0}
-  goodLeft: {fileID: 0}
-  goodRight: {fileID: 0}
-  badLeft: {fileID: 0}
-  badRight: {fileID: 0}
-  EndLeft: {fileID: 0}
-  EndRight: {fileID: 0}
 --- !u!212 &587550500
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -637,7 +611,7 @@ GameObject:
   - component: {fileID: 1269127664}
   m_Layer: 0
   m_Name: timing_bar
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -656,9 +630,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cursorMovementSpeed: 5
   cursorTransform: {fileID: 512872144}
-  greenZone: {fileID: 215508561}
-  yellowZone: {fileID: 1445084235}
-  orangeZone: {fileID: 1316966878}
   greatLeft: {fileID: 1503029724}
   greatRight: {fileID: 1842560006}
   goodLeft: {fileID: 668659315}
