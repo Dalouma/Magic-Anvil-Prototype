@@ -110,6 +110,7 @@ public class TimingScript : MonoBehaviour
         gameStart= false;
         currentSpeed = 0;
 
+        
     }
 
 }
