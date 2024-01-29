@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TimingScript : MonoBehaviour
 {
@@ -109,8 +110,9 @@ public class TimingScript : MonoBehaviour
     {
         gameStart= false;
         currentSpeed = 0;
+        Debug.Log("loading customer scene");
+        SceneManager.LoadScene(0);
 
-        
     }
 
 }

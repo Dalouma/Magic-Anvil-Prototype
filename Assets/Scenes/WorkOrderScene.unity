@@ -238,10 +238,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 34814632}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d77b8bd6af5ddb48967f3b68c44c776, type: 3}
+  m_Script: {fileID: 11500000, guid: 6212c979ee350fb41a03cbd2f36eeef4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  iron: 0
+  customerText: {fileID: 1647332542}
 --- !u!1 &370750825
 GameObject:
   m_ObjectHideFlags: 0
@@ -433,8 +433,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2066985607}
-        m_TargetAssemblyTypeName: CustomerManager, Assembly-CSharp
+      - m_Target: {fileID: 34814637}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: ChooseWeapon
         m_Mode: 5
         m_Arguments:
@@ -682,8 +682,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2066985607}
-        m_TargetAssemblyTypeName: CustomerManager, Assembly-CSharp
+      - m_Target: {fileID: 34814637}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: ChooseWeapon
         m_Mode: 5
         m_Arguments:
@@ -1616,8 +1616,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2066985607}
-        m_TargetAssemblyTypeName: CustomerManager, Assembly-CSharp
+      - m_Target: {fileID: 34814637}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: ChooseWeapon
         m_Mode: 5
         m_Arguments:
@@ -1711,6 +1711,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   iron: 0
+  chosenWeapon: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

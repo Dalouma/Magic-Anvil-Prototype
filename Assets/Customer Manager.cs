@@ -9,11 +9,16 @@ public class CustomerManager : MonoBehaviour
 
     [SerializeField] private int iron;
 
-    private string chosenWeapon = "";
+    public string chosenWeapon = "";
     private void Awake()
     {
-        Instance = this;
-        DontDestroyOnLoad(gameObject);
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        //Instance = this;
+        //DontDestroyOnLoad(gameObject);
     }
 
     public void GoToForging()
